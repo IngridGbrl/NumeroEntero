@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NumeroEntero.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="25" Padding="30,0" BackgroundColor="Azure"
+            VerticalOptions="Center">
+
+            <Image
+                Source="numbers.png"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+
+            <Label Text="Introduzca un número" TextColor="Black"  FontSize="Medium"/>
+            <Entry x:Name="Numero" Placeholder="Digite aqui" Keyboard="Numeric" TextColor="Gray"/>
+
+            <Label Text="Cuadrado" TextColor="Black"  FontSize="Medium"/>
+            <Entry x:Name="cuadrado" Placeholder="0" TextColor="DarkRed" IsEnabled="False"/>
+
+            <Label Text="Cubo" TextColor="Black" FontSize="Medium"/>
+            <Entry x:Name="Cubo" Placeholder="0" TextColor="DarkRed" IsEnabled="False"/>
+
+            <Button
+                x:Name="CalcularNum" Text="CALCULAR" Clicked="CalcularNum_Clicked" BackgroundColor="Sienna" TextColor="SeaShell"
+                 BorderColor="DarkSalmon" WidthRequest="100" HeightRequest="60" BorderWidth="3" CornerRadius="20"
+                HorizontalOptions="Center" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
